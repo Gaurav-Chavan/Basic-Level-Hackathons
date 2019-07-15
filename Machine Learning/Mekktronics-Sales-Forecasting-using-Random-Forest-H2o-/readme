@@ -1,0 +1,18 @@
+Dataset Description:
+
+Sales Data was spread across country levels. (Daily Basis) Holiday information was given Promotional Expense details were given (Weekly Level)
+
+Task: Forecasting at Monthly Level
+
+Data Preparation Steps Taken
+
+holidays date conversion into proper format( date standardization)
+Sales Currency standardization ( Scaled to one currency)
+Promotional Currency standardization ( Scaled to one currency)
+Data Aggregation at Monthly Level
+Feature Engg ( Finding region wise: number of holidays in a month)
+Model Building Stage
+
+Did EDA to find exactly number of bins for random forest model
+Used H20 model with n.trees =100 as aggregated data was less.
+Train-Test split gave results of Symmetric mean absolute percentage error as 0.12
