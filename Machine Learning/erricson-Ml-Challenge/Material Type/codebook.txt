@@ -1,0 +1,69 @@
+****************** System Features      ***********************************************
+
+Platform R 3.5.2 (RStudio)
+Processor i7
+Ram : 8G
+
+**********************************************************************************************
+
+
+****************** Code Pre-requisites   ***********************************************
+
+1. Set working directory and connect to Internet( for Package installer and h2o automl load)
+
+
+**********************************************************************************************
+
+
+****************** Data Preparation   ***********************************************
+
+
+1. Get summary of data.
+
+2. Remove ID from train as well as test as ML model generated should be expalainable via features and not ID's
+
+3. For Publication Year Keep Only Years and extract garbage values from text and for Creator --- Remove garbage numbers
+
+4. Split author based on separator "Author 1" "Author 2"
+
+4. Unite Title & Subjects into content
+
+5. Natural language Processing for textual features [ Job_title, Summary,Positive feedbacks,negative Feedbacks,advice to mgmt]
+	5.0 Merging these features to create a text corpus.
+	5.1 Forming Corpus by combining train and test data.
+	5.2 Removing Punctuation
+	5.3 Removing numbers
+	5.4 Converting to lower case
+	5.5 Removing stop words
+	5.6 Stemming
+	5.7 Whitespace
+	5.8 Create Document Term Matrix 
+	5.9 Sparse Term Removal
+	5.10 Word Count Distribution 
+	5.11 Creating Features from Document Term Matrix
+	
+6. Split Publisher based on separator ; "Publisher 1" "Publisher 2"
+
+7. CheckoutYear - Publication Year = Age
+
+8. Converting months, usageclass to categories
+
+9. Missing value imputation using MICE  and mean imputation[Publication Year,age]equations (method : predictive Mean Matching)
+
+10. Removing Authors,Publishers as its distribution is not same in train/test set.
+
+
+**********************************************************************************************
+
+****************** Model Building Stage ***********************************************
+
+Predictive Modelling for 1 hour using h2o Automl functionality, with stopping metric as logloss and exclusion of Random Forest
+
+Gradient Boosting Model gave best results on test set
+
+ 
+**********************************************************************************************
+
+
+	
+	
