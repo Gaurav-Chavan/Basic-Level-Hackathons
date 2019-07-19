@@ -1,0 +1,70 @@
+****************** System Features      ***********************************************
+
+Platform R 3.5.2 (RStudio)
+Processor i7
+Ram : 8G
+ETA : 2hrs
+
+
+**********************************************************************************************
+
+
+****************** Code Pre-requisites   ***********************************************
+
+1. Set working directory(Line 32) and connect to Internet( for Package installer and h2o automl load)
+
+
+**********************************************************************************************
+
+
+****************** Data Preparation   ***********************************************
+
+1. Get summary of data.
+
+2. Remove identifier Variables as model build should be dependant upon features & independant of Identifiers[persontravellingid,member id,reservation_id,resort_id]
+
+3. Extracting Features from Date variables like day,weekday,quarter,month,year, day of quarter [checkin_date,booking_date, checkout_date]
+
+4. Missing value imputation for [season_holidayed_code,state_code_residence,roomnights(negative values) are treated as NA] data using median imputation 
+
+5. Categorizing Features Properly into Continuous and Categorical. Categorizing Date Features like Month, Quarter.
+
+
+**********************************************************************************************
+
+
+****************** Feature Engineering  ***********************************************
+1. booking_date - checkin_date = time_gap
+
+2. checkin_date - checkout_date = duration_stay
+
+3. numberofadults + numberofchildren = family_size
+
+4. numberofadults/family_size = adult_ratio [Dealing with NA -> 0]
+
+5. numberofchildrens/family_size = kids_ratio [Dealing with NA -> 0]
+
+
+
+**********************************************************************************************
+
+
+
+
+****************** Model Building Stage ***********************************************
+
+1. Tree based models are not distance based models and can handle varying ranges of features. Hence, Scaling is not required while modelling trees.
+
+2. PCA can be used but, too many categorical variables will increase computational complexity and would not give insight as to which features impacted the model (Business strategy).
+
+3. Predictive Modelling for 1 and 1/2 hour using h2o Automl functionality, excluded DeepLearning and RandomForest and used GBM Learner.
+
+4. Feature Engineering helped to get more important features for modelling. [duration_stay,time_gap]
+
+
+
+ 
+
+
+	
+	
