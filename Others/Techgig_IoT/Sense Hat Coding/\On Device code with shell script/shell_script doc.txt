@@ -1,0 +1,8 @@
+We wrote a shell script, so that the device runs the source code as soon as it starts up on bootup.
+The name of shell script is given as launcher.sh so that system recognizes it to be loaded on boot time.
+
+In this script we just add the path where source code to run  is stored, save it and reboot the machine.
+  cd /
+  cd home/pi/program
+  sudo python Sense_Logger_v4.py
+  cd /
