@@ -1,0 +1,54 @@
+****************** System Features      ***********************************************
+
+Platform R 3.5.2 (RStudio)
+Processor i7
+Ram : 8G
+
+**********************************************************************************************
+
+
+# ****************** Code Pre-requisites   ***********************************************
+
+1. Set working directory and connect to Internet( for Package installer and h2o automl load)
+
+
+**********************************************************************************************
+
+
+
+**********************************************************************************************
+
+# ****************** Data Preparation   ***********************************************
+
+**********************************************************************************************
+
+
+1. Check structure of data & Missingness if any -> No missing value found.
+
+2.  Converting character Date_Time into Actual Date_Time features, extracting day, day_of_week, day_of_month, day_of_quarter,
+	week, month, quarters, years, hours, minutes, seconds. 
+	
+3. Removing minutes and seconds as they have zero variance	
+
+4. Feature Engineering: 
+	4.1 Conversion of Categorical variables
+		Thumb rule: For any categorical feature: check for uniqueness, if same values are present in test or not. If not removing it would be essential.
+	4.2 Conversion of holidays, weather_type & weather_description to categorical variables
+
+	4.3 Dealing with dates : Converting month, day_of_month, day_of_quarter, day_of_week, hours into categorical variables
+	
+	4.4 Correlation Analysis: Removing highly correlated feature from data which is "visibility_in_miles"
+
+	
+**********************************************************************************************
+
+# ****************** Predictive Modelling   ***********************************************
+
+**********************************************************************************************
+
+1. Used Automl Framework of H2o. Automl is a latest boom in which we just specify what the stopping metric should be and rest the model will give
+	results which will produce most accurate objective function.
+	
+2. In our case, We used MSE as stopping metric, with 10 fold cross validation.
+
+3. Gradient Boosting ensemble gave better results.
