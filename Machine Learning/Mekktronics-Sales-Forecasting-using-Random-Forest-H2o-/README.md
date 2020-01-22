@@ -1,18 +1,15 @@
 # Mekktronics-Sales-Forecasting-using-Random-Forest-H2o
 
-**Dataset Description:**
+**Dataset Description**
 
 Sales Data was spread across country levels. (Daily Basis) 
 Holiday information was given 
 Promotional Expense details were given (Weekly Level)
 
-**Task:**
-
+**Task**
 Forecasting at Monthly Level
 
-
-
-**Data Preparation Steps Taken **
+**Data Preparation StepsTaken**
 
 1.  holidays date conversion into proper format( date standardization)
 2.  Sales Currency standardization ( Scaled to one currency)
@@ -21,7 +18,7 @@ Forecasting at Monthly Level
 5. Feature Engg ( Finding region wise:  number of holidays in a month)
 
 
-**Model Building Stage **
+**Model Building Stage**
 
 1. Did EDA to find exactly number of bins for random forest model
 2. Used H20 model with n.trees =100 as aggregated data was less.
