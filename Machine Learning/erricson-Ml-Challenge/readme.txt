@@ -1,7 +1,12 @@
-This Challenge was focused on solving problems in domain of Text Analytics to use content data for Classiciation.
+*This Challenge was focused on solving problems in domain of Text Analytics to use content data for Classiciation.*
 
-Programming Framework: RStudio R
+**Programming Framework**: 
 
-Key Libraries H2o (Prediction), MICE & Hmisc (For Missing Value Imputation)
+RStudio R
 
-Important Framework: H2o Automl
+**Key Libraries** 
+H2o (Prediction), MICE & Hmisc (For Missing Value Imputation)
+
+**Important Framework:**
+
+H2o Automl
