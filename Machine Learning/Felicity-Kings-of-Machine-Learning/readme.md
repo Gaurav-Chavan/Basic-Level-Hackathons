@@ -1,4 +1,4 @@
-  ##Situation:
+  **Situation:**
   
   Dota2 is a free-to-play multiplayer online battle arena (MOBA) video game. 
   Dota 2 is played in matches between two teams of five players, with each team occupying and 
@@ -22,8 +22,12 @@
  
  **Tasks:**
  
- 1. Check for missing values 
+ 1. Check for missing values
+ 
  2. Feature Creation
+ 
  3. Data Cleaning
+ 
  4. Feature Importance using  Boruta
+ 
  5. Predictive Modelling using caret XGBoost
