@@ -1,4 +1,10 @@
-# Hacakthon Name ----- Domain
+# Hacakthon Name -----  | Domain| 
+
+_For each hackthon, I have clustered them according to their domain.
+Some hackathon had their data anaonymized, so just mere Model Building and Analysis was required._
+
+
+
 
 1. Building Business Model for Insurance Data           ---- * Insurance *
 2. Club Mahindra Data Olympic                           ---- * Hotel | Inventory Management | Campaign Analytics *
