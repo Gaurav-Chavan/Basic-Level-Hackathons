@@ -1,4 +1,4 @@
-Loan Delinquency Prediction
+**Loan Delinquency Prediction**
 
 Loan default prediction is one of the most critical and crucial problem faced by financial institutions and 
 organizations as it has a noteworthy effect on the profitability of these institutions. 
