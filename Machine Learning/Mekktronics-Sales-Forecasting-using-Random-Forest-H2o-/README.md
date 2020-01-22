@@ -1,12 +1,12 @@
-# Mekktronics-Sales-Forecasting-using-Random-Forest-H2o-
+# Mekktronics-Sales-Forecasting-using-Random-Forest-H2o
 
-*Dataset Description:*
+**Dataset Description:**
 
 Sales Data was spread across country levels. (Daily Basis) 
 Holiday information was given 
 Promotional Expense details were given (Weekly Level)
 
-*Task:*
+**Task:**
 
 Forecasting at Monthly Level
 
