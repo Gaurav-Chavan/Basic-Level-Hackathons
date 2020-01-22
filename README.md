@@ -1,4 +1,4 @@
-# Hackathons
+# About it
 
 I have categortized the hackathons based on problem statements and scope of project into
 
